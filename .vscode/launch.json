@@ -4,6 +4,28 @@
     // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+    {
+        "name": "Launch Chrome",
+        "request": "launch",
+        "type": "pwa-chrome",
+        "url": "http://localhost:8080",
+        "webRoot": "${workspaceFolder}"
+    },
+        
+        
+        {
+            "type": "extensionHost",
+            "request": "launch",
+            "name": "Iniciar a Extensão",
+            "runtimeExecutable": "${execPath}",
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}"
+            ],
+            "outFiles": [
+                "${workspaceFolder}/out/**/*.js"
+            ],
+            "preLaunchTask": "npm"
+        },
         
         {
             "type": "java",
@@ -12,55 +34,7 @@
             "mainClass": "app.app.Teste2",
             "projectName": "Projetos_51628688"
         },
-        {
-            "type": "java",
-            "name": "Launch App",
-            "request": "launch",
-            "mainClass": "app.app.App",
-            "projectName": "Projetos_51628688"
-        },
-        {
-            "type": "java",
-            "name": "Launch Teste2",
-            "request": "launch",
-            "mainClass": "Teste2",
-            "projectName": "Projetos_51628688"
-        },
-        {
-            "type": "java",
-            "name": "Launch Teste2",
-            "request": "launch",
-            "mainClass": "app.Teste2",
-            "projectName": "Projetos_51628688"
-        },
-        {
-            "type": "java",
-            "name": "Launch App",
-            "request": "launch",
-            "mainClass": "app.App",
-            "projectName": "Projetos_51628688"
-        },
-        {
-            "type": "java",
-            "name": "Launch Teste1",
-            "request": "launch",
-            "mainClass": "Teste1",
-            "projectName": "Projetos_51628688"
-        },
-        {
-            "type": "java",
-            "name": "Launch App",
-            "request": "launch",
-            "mainClass": "App",
-            "projectName": "Projetos_51628688"
-        },
-        {
-            "name": "Attach to Chrome",
-            "port": 9222,
-            "request": "attach",
-            "type": "pwa-chrome",
-            "webRoot": "${workspaceFolder}"
-        },
+        
         {
             "name": "(gdb) Iniciar",
             "type": "cppdbg",
