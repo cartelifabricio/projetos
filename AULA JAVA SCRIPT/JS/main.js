@@ -47,9 +47,42 @@ if (idade >=18) {
 }
 */  
 
+/*
 var count = 0;
 while (count <= 5){
     console.log(count);
     count++;
 }
 
+
+var d = new Date ();
+alert (d.getMonth()+1);
+*/
+
+/*
+function soma(n1,n2);{
+return n1 + n2;
+}
+
+
+function validaidade(idade){
+    if (idade >= 18) {
+    validar = true
+    }else{
+        validr = false
+    }
+    return validar;
+        
+    }
+
+
+var idade = prompt ("Qual a sua idade?");
+validaidade(idade);
+console.log(validar);
+
+*/
+
+function clicou(){
+    document.getElementById("agradecimento").innerHTML = "Obrigado por clicar";
+    //alert("Obrigado por clicar");
+}
